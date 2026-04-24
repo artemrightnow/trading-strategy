@@ -1,0 +1,8 @@
+pandas
+numpy
+yfinance
+vectorbt
+matplotlib
+jupyter
+quantstats
+optuna
