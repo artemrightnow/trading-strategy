@@ -3,7 +3,7 @@
 Systematic trading strategy research and backtesting framework.
 
 ## Strategy
-A couple of signals incorporated for a couple of asset classes
+AUD/CAD spread mean reversion — exploiting the cointegration between ASX 200 and TSX Composite indices, both driven by commodity-exporting economies.
 
 ## Performance
 | Metric | Value |
@@ -13,11 +13,16 @@ A couple of signals incorporated for a couple of asset classes
 | Max Drawdown | - |
 | Calmar Ratio | - |
 
+## Data
+- ASX 200 (`^AXJO`) and TSX Composite (`^GSPTSE`) equity indices
+- AUD/USD and CAD/USD FX rates
+- Source: Yahoo Finance via `yfinance` (free, no API key required)
+
 ## Setup
 pip install -r requirements.txt
 
 ## Usage
-python backtest/engine.py --start 2018-01-01 --end 2024-01-01
+python backtest/engine.py --start 2000-01-01
 
 ## Structure
 - `strategy/` — signal generation and portfolio logic
